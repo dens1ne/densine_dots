@@ -19,7 +19,7 @@
     "modules-left": [
         //"custom/rofi",
         "hyprland/workspaces",
-        
+
         "custom/media",
         // "mpd",
         //"custom/screenshot",
@@ -63,7 +63,7 @@
             "warning": 30,
             "critical": 5
         },
-        "format": "{icon}  {capacity}%",
+        "format": "{icon}    {capacity}%",
         /*"format-charging": "<span foreground='#B8BB26'></span> {capacity}%",*/
         "format-plugged": "<span foreground='#3C3836'></span> {capacity}%",
         "format-icons": {
@@ -75,10 +75,10 @@
             "<span foreground='#B8BB26'></span>"
         ],
         "format-charging": [
-          "", 
-          "", 
-          "", 
-          "", 
+          "",
+          "",
+          "",
+          "",
           ""
         ]
       }
@@ -91,8 +91,8 @@
         //"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
         "critical-threshold": 80,
         // "format-critical": " {temperatureC}°C",
-        "format-critical": "  {temperatureC}°C",
-        "format": "{icon} {temperatureC}°C",
+        "format-critical": "   {temperatureC}°C",
+        "format": "{icon}  {temperatureC}°C",
         "format-icons": [
           "<span foreground='#8EC07C'></span>",
           "<span foreground='#83A598'></span>",
@@ -100,7 +100,7 @@
           /*"<span foreground='#FB4934'></span>"*/
         ],
         "max-length": 7,
-        "min-length": 7,
+        "min-length": 5,
         "on-click": "xsensors"
     },
 
@@ -112,7 +112,7 @@
     },
 
     "network": {
-        "format-wifi": "<span foreground='#D3869B'> </span> {essid}",
+        "format-wifi": "<span foreground='#D3869B'> </span>  {essid}",
         //"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-ethernet": " {ifname}",
         "format-linked": "{ifname} (No IP) ",
@@ -126,10 +126,10 @@
         "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
         "interval": 10
     },
-    
+
     "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}  {percent}%",
+    "format": "{icon}   {percent}%",
     "format-icons": [
       "<span foreground='#458588'>󰃞</span>",
       "<span foreground='#D79921'>󰃟</span>",
@@ -138,7 +138,7 @@
 },
 
     "custom/storage": {
-        "format": "{icon}  {percentage}%",
+        "format": "{icon}   {percentage}%",
         "format-alt": "  {percentage}%",
         "format-alt-click": "click-right",
         "return-type": "json",
@@ -195,7 +195,7 @@
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
-        "max-length": 50,      
+        "max-length": 50,
         "format-icons": {
         "spotify": "<span foreground='#8EC07C'></span> ",
         "default": "<span foreground='#D3869B'></span> "
@@ -206,7 +206,7 @@
         "on-scroll-down":"playerctl next",
         "escape": true,
         "exec-if": "pgrep spotify_player",
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder                    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name                                                                                                               
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder                    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
 },
 
     "custom/power": {
@@ -217,7 +217,7 @@
     },
 
     "clock#date": {
-        "format": "<span foreground='#8EC07C'></span>  {:%H:%M  <span foreground='#8EC07C'></span>  %e %b}",
+        "format": "<span foreground='#8EC07C'></span>  {:%H:%M  <span foreground='#8EC07C'></span>   %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>"
     },
@@ -356,7 +356,7 @@
             "car": " ",
             "default": [
               "<span foreground='#B8BB26'> </span>",
-              "<span foreground='#C99F2A'> </span>", 
+              "<span foreground='#C99F2A'> </span>",
               "<span foreground='#DA822D'> </span>",
               "<span foreground='#EA6631'> </span>",
               "<span foreground='#FB4934'> </span>"

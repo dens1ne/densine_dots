@@ -1,14 +1,13 @@
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "SFMono Nerd Font";
+  font-family: "SF Pro Text";
   font-size: 9pt;
-  font-weight: 600;
+  font-weight: 500;
   transition-property: background-color;
   transition-duration: 0.5s;
   padding:0px;
   margin:0px;
-  
 }
 
 /* Reset all styles */
