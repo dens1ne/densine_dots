@@ -5,9 +5,9 @@
 
     "layer": "top",
     "reload_style_on_change": 1,
-    "position": "top",
+    "position": "bottom",
 
-    "height": 5,
+    "height": 0,
 
     "margin-left": 5,
     "margin-top": 0,
@@ -20,7 +20,7 @@
         //"custom/rofi",
         "hyprland/workspaces",
 
-        "custom/media",
+        // "custom/media",
         // "mpd",
         //"custom/screenshot",
         //"idle_inhibitor"
@@ -114,7 +114,7 @@
     "network": {
         "format-wifi": "<span foreground='#D3869B'> </span>  {essid}",
         //"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-ethernet": " {ifname}",
+        "format-ethernet": "   {ifname}",
         "format-linked": "{ifname} (No IP) ",
         "format": "",
         "format-disconnected": "<span foreground='#FB4934'>󰖪 </span>Disconnected",
@@ -282,18 +282,18 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": "",
-            "active": "",
-            "default": ""
+            // "1": "",
+            // "2": "",
+            // "3": "",
+            // "4": "",
+            // "5": "",
+            // "6": "",
+            // "7": "",
+            // "8": "",
+            // "9": "",
+            // "10": "",
+            // "active": "",
+            // "default": ""
         //Circle style   
         //Pacman style 󰮯  󱙝
 
