@@ -1,0 +1,12 @@
+[window]
+opacity = 0.5
+blur = true
+
+[shell]
+program = "/bin/fish"
+args = ["-l", "-c", "zellij"]
+
+[font]
+  normal = { family = "FiraCode Nerd Font", style = "Regular" }
+  bold = { family = "FiraCode Nerd Font", style= "Bold" }
+  italic = { family="FiraCode Nerd Font", style="Italic" }
