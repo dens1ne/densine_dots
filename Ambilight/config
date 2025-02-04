@@ -1,0 +1,18 @@
+brightness = 100;
+leds_on_top = 58;
+leds_on_side = 14;
+
+pixels_to_process = 30;
+
+pixels_per_led_top = 66;
+pixels_per_led_side = 77;
+
+vertical_pixel_gap = 1;
+vertical_pixel_count = 1080;
+
+horizontal_pixel_gap = 6;
+horizontal_pixel_count = 3840;
+
+background = [0, 0, 0];
+
+arduino_device_name = "/dev/ttyUSB0";
